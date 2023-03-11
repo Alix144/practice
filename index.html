@@ -6,42 +6,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Results summary component</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+
 <div class="container">
 
     <div class="result">
-      <h3>Your Result</h3>
+      <h3 id="result-h3">Your Result</h3>
       <div class="circle">
-        <h1>76</h1>
-        <p>of 100</p>
+        <h1 id="circle-h1">76</h1>
+        <p id="circle-p">of 100</p>
       </div>
-      <h3>Great</h3>
-      <p>You scored higher than 65% of the people who have taken these tests.</p>
+      <div id="result-p">        
+        <h3>Great</h3>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
+      </div> 
     </div>
 
   <div class="summary">
+<div class="last">
     <h3>Summary</h3>
+
     <div id="reaction">
-      <img src="assets/images/icon-reaction.svg" alt="">
+      <div class="skills">
+        <img src="assets/images/icon-reaction.svg" alt="">
+        <p>Reaction</p>
+      </div>
       <p><span>80</span> / 100</p>
     </div>
+
     <div id="memory">
-      <img src="assets/images/icon-memory.svg" alt="">
+      <div class="skills">
+        <img src="assets/images/icon-memory.svg" alt="">
+        <p>Memory</p>
+      </div>
       <p><span>92</span> / 100</p>
     </div>
+
     <div id="verbal">
+      <div class="skills">
       <img src="assets/images/icon-verbal.svg" alt="">
+      <p>Verbal</p>
+    </div>
       <p><span>61</span> / 100</p>
     </div>
+
     <div id="visual">
+      <div class="skills">
       <img src="assets/images/icon-visual.svg" alt="">
+      <p>Visual</p>
+    </div>
       <p><span>72</span> / 100</p>
     </div>
     <button class="btn">Continue</button>
   </div>
-
+</div>
 </div>
 
 
